@@ -19,7 +19,7 @@ THIRD_PARTY_APPS = (
 
 #aplicaciones locales
 LOCAL_APPS = (
-
+    'apps.home',
 	)
 
 

@@ -1,5 +1,5 @@
-import os
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+from unipath import Path
+BASE_DIR = Path(__file__).ancestor(3)
 
 SECRET_KEY = 'omt6nbk#)yvgry-%z0u)@1@61#c*l2z29!1j9x#%ajb#u^0_9d'
 
@@ -49,3 +49,5 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+TEMPLATE_DIRS = [BASE_DIR.child('templates')]

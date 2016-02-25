@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Curso de django</title>
-</head>
-<body>
-	<h1>Hola mundo </h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Tiempo futuro{% endblock %}
+
+{% block content %}
+<p>En {{ hour_offset }} hora(s), será {{ next_time }}.</p>
+{% endblock %}
